@@ -39,4 +39,7 @@
   {%- if site.email -%}
   <li><a href="mailto:{{- site.email -}}" class="icon fa-envelope"><span class="label">Email</span></a></li>
   {%- endif -%}
+  {%- if site.googledrive_url -%}
+  <li><a href="{{- site.googledrive_url -}}" class="icon fas fa-download"><span class="label">Download</span></a></li>
+  {%- endif -%}
 </ul>
