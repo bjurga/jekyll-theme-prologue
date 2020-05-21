@@ -49,5 +49,34 @@
   <script src="{{- 'assets/js/util.js' | relative_url -}}" defer></script>
   <!--[if lte IE 8]><script src="{{- 'assets/js/ie/respond.min.js' | relative_url -}}" defer></script><![endif]-->
   <script src="{{- 'assets/js/main.js' | relative_url -}}" defer></script>
-
+<script type='application/ld+json'>
+{
+	"@context": "https://schema.org",
+	"@graph": [
+		{
+			"@type": "WebSite",
+			"@id": "https://samopal.pl/#website",
+			"url": "https://samopal.pl/",
+			"name": "Samopał",
+			"description": "Stowarzyszenie strzeleckie Samopał. Naszą bazą jest Olkusz. Ułatwiamy dostęp do broni. Prowadzimy szkolenia dla strzelców sportowców oraz strzelania typowo rozrywkowe. Staramy się, aby nasze hobby nie było zbyt drogie.",
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": "https://www.happy-time.pl/?s={search_term_string}",
+				"query-input": "required name=search_term_string"
+			}
+		},
+		{
+			"@type": "CollectionPage",
+			"@id": "https://samopal.pl/#website",
+			"url": "https://samopal.pl/",
+			"inLanguage": "pl-PL",
+			"name": "Samopał - Strzelectwo sportowe i rekreacyjne.",
+			"isPartOf": {
+				"@id": "https://www.happy-time.pl/#website"
+			},
+			"description": "Stowarzyszenie strzeleckie Samopał. Naszą bazą jest Olkusz. Ułatwiamy dostęp do broni. Prowadzimy szkolenia dla strzelców sportowców oraz strzelania typowo rozrywkowe. Staramy się, aby nasze hobby nie było zbyt drogie."
+		}
+	]
+}
+</script>
 </head>
